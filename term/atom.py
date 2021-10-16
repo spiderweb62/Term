@@ -16,14 +16,15 @@ ATOM_MARKER = "pyrlang.Atom"
 
 
 class Atom(str):
-    """ Stores a string decoded from Erlang atom. Encodes back to atom.
+    """Stores a string decoded from Erlang atom. Encodes back to atom.
 
-        Be ware this won't separate itself from a string in a dict for example:
+    Be ware this won't separate itself from a string in a dict for example:
 
-            {Atom('foo'): 1, 'foo': 2} == {'foo': 2}
+        {Atom('foo'): 1, 'foo': 2} == {'foo': 2}
     """
+
     def __repr__(self):
-        return'Atom({})'.format(super(Atom, self).__repr__())
+        return "Atom({})".format(super(Atom, self).__repr__())
 
 
 class StrictAtom(Atom):
@@ -35,6 +36,7 @@ class StrictAtom(Atom):
         {StrictAtom('foo'): 1, 'foo': 2} == {StrictAtom('foo'): 1, 'foo': 2}
 
     """
+
     def __repr__(self) -> str:
         return "Strict{}".format(super(StrictAtom, self).__repr__())
 

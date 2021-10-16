@@ -5,5 +5,6 @@ from term import fun as f
 
 from typing import Union, List, Any
 
-AnyTerm = Union[str, List[Any], tuple, dict, int, float, bytes,
-                a.Atom, p.Pid, r.Reference, f.Fun]
+AnyTerm = Union[
+    str, List[Any], tuple, dict, int, float, bytes, a.Atom, p.Pid, r.Reference, f.Fun
+]

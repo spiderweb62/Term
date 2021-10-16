@@ -7,5 +7,13 @@ from term.list import List, ImproperList, NIL
 from term.pid import Pid
 from term.reference import Reference
 
-__all__ = ['Atom', 'BitString', 'Fun', 'List', 'ImproperList', 'NIL',
-           'Pid', 'Reference']
+__all__ = [
+    "Atom",
+    "BitString",
+    "Fun",
+    "List",
+    "ImproperList",
+    "NIL",
+    "Pid",
+    "Reference",
+]

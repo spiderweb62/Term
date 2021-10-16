@@ -1,2 +1,23 @@
+[tool.poetry]
+name = "term"
+version = "1.4"
+description = "Erlang term and External Term Format codec in Python and native Rust extension"
+authors = ["Dmytro Lytovchencko <dmytro.lytovchenko@gmail.com>","Pyrlang <pyrlang@s2hc.com>"]
+homepage = 'http://pyrlang.readthedocs.io/'
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Jinja2 = "^3.0.2"
+MarkupSafe = "^2.0.1"
+Pillow = "^8.4.0"
+Pygments = "^2.10.0"
+Sphinx = "^4.2.0"
+ansicolors = "^1.1.8"
+black = "^21.9b0"
+
+[tool.poetry.dev-dependencies]
+
+
 [build-system]
 requires = ["setuptools", "wheel", "setuptools-rust"]
