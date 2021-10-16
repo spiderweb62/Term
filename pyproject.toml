@@ -14,10 +14,10 @@ Pillow = "^8.4.0"
 Pygments = "^2.10.0"
 Sphinx = "^4.2.0"
 ansicolors = "^1.1.8"
-black = "^21.9b0"
 
 [tool.poetry.dev-dependencies]
-
+setuptools-rust = "^0.12.1"
+black = "^21.9b0"
 
 [build-system]
 requires = ["setuptools", "wheel", "setuptools-rust"]
